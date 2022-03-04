@@ -1,0 +1,45 @@
+
+--------------------------------------------------------------------------
+1.web项目
+create-react-app web --template=typescript
+
+--------------------------------------------------------------------------
+2.server项目
+     npm init -y
+     npm install -g typescript
+     tsc init -y
+     yarn add @types/xxx
+
+
+--------------------------------------------------------------------------
+node不认识typescript  ==> ts->js
+ts不认识node库 ==> webpack-node-externals
+
+--------------------------------------------------------------------------
+web
+
+React组件(tsx) -> jsx ->js
+
+
+
+--------------------------------------------------------------------------
+server
+
+node+ts
+    ts -> 编译(webpack/ts-loader) -> js
+    node js
+    热更新
+
+    服务器本身 ts->js webpack.server.js
+    web组件 tsx-> js  webpack.web.js
+
+    依赖项:
+    webpack webpack-cli
+    ts-loader
+    typescript
+    koa koa-router
+    webpack-node-externals
+    awesome-typescript-loader
+    file-loader
+    react react-dom
+

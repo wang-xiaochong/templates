@@ -1,0 +1,41 @@
+
+----------------------------------------
+项目：
+1.前台、后台混合渲染
+2.typescript
+3.模块化
+4.划分
+5.数据请求、跨域
+
+
+----------------------------------------
+
+server：
+
+    依赖项：
+    koa-static @types/koa-static
+    css-loader
+    style-loader
+
+----------------------------------------
+server:
+    API
+    render
+
+web:
+
+    跨域解决
+    1.不跨域：proxy         限制：生产版不存在跨域 纯前台
+    2.cors：               后端服务器配合
+
+    简单请求 get、没有请求头
+    复杂请求 请求被分为两次
+    1.methods：options
+        不允许
+        允许
+
+
+    依赖项：
+    axios
+    http-proxy-middleware
+

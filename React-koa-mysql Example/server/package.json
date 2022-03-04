@@ -1,0 +1,46 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:server": "webpack --config webpack.server.js --mode=production",
+    "dev:server": "webpack --config webpack.server.js --mode=development",
+    "watch:server": "webpack --config webpack.server.js --mode=development -w",
+    "start:server": "nodemon build/server.js",
+    "start": "npm run dev:server & npm-run-all --parallel watch:server start:server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/router": "^10.1.1",
+    "@types/koa-static": "^4.0.2",
+    "@types/koa__router": "^8.0.11",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.12",
+    "@types/redis": "2.8.28",
+    "awesome-typescript-loader": "^5.2.1",
+    "axios": "^0.26.0",
+    "css-loader": "^6.6.0",
+    "file-loader": "^6.2.0",
+    "koa": "^2.13.4",
+    "koa-static": "^5.0.0",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
+    "npm-run-all": "^4.1.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "redis": "3.0.2",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.2.7",
+    "typescript": "^4.6.2",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.4"
+  }
+}
